@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="test-search-function;when-someone-clicks-the-search-button" tests="3" failures="1" skipped="0">
+        <properties>
+            <property name="URI" value="/Users/PuchantiQ/Documents/sql-selenium-workshop/features/search.feature">
+            </property>
+        </properties>
+        <testcase name="Given we loaded our web page" classname="test-search-function;when-someone-clicks-the-search-button" time="0.845213595">
+        </testcase>
+        <testcase name="When I click the search button" classname="test-search-function;when-someone-clicks-the-search-button" time="0.163372211">
+        </testcase>
+        <testcase name="Then the body background color should be blue" classname="test-search-function;when-someone-clicks-the-search-button" time="0.04522249">
+            <failure message="AssertionError: Body background color is not blue, it is rgba(0, 0, 255, 1)">AssertionError: Body background color is not blue, it is rgba(0, 0, 255, 1)
+    at createWorld.&lt;anonymous&gt; (/Users/PuchantiQ/Documents/sql-selenium-workshop/step-definitions/search.js:35:5)
+    at process._tickCallback (internal/process/next_tick.js:68:7)</failure>
+        </testcase>
+    </testsuite>
+</testsuites>

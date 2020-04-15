@@ -1,0 +1,204 @@
+body {
+    /*background-color: lightgrey;*/
+    margin: 20px;
+}
+    
+h1 {
+    color: rgb(230, 23, 137);
+    font-family: Verdana;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+main h1{
+    color: rgb(230, 23, 137);
+    font-family: Verdana;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+    
+h2 {
+    color: rgb(230, 23, 137);
+    font-family: Verdana; 
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: darkslateblue;
+    font-family: Verdana; 
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+    
+p {
+    font-family: Georgia;
+    font-size: 16px;
+    line-height: 125%;
+    margin-bottom: 10px;
+}
+    
+    /* This rule set applies for all ul tags inside main tags*/
+main ul {
+    list-style-type: circle;
+    list-style-position: inside;
+    margin-bottom: 10px;
+}
+    
+main ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+    margin-bottom: 10px;
+}
+    
+/*header {
+    background-color: rgb(205, 231, 205);
+}*/
+    
+    /* Select alla header tags,
+    all main tags, footer tags for this ruleset*/
+header, main, footer {
+    padding: 20px;
+}
+    
+    /* Change all li tags inside nav so
+    that they can be displayed beside each other*/
+    
+nav li {
+    display: inline-block;
+}
+    
+    /* Add some space inside a tags in a nav */
+    /* This rule set applies for all ul tags inside main tags*/
+nav a {
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: 1px solid white; /* Give little taste on the header*/
+    color: black;
+    text-decoration: none; /*Remove underscore*/
+    font-family: 'Gill Sans';
+}
+    
+    /* Change the look of a tags in the nav
+    if you hover over then (have your mouse pointer above them*/
+nav a:hover {
+    color: cadetblue;
+}
+    
+/*nav {
+    background-color: darksalmon;
+}*/
+    
+    /* Select all tags that has atribute class="active" */
+.active {
+    color: rgb(230, 23, 137);
+}
+    
+    /* Style all images inside the main tag the same way*/
+main img {
+    display: block; /* default is inline for image*/
+    width: 30%;
+    float: right;
+    margin-left: 20px; /*some space between image and text*/
+    border-radius: 10px; /* rounded corners */
+}
+
+table, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+}
+
+
+table, tr:nth-child(even) {
+    background-color: #fff;
+}
+table, tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+div .fa-bars {   /*From style,body,background.. is to make menu, home icon button*/
+    color: rgb(230, 23, 137);
+    padding: 12px 16px;
+    font-size: 30px;
+    cursor: pointer;
+}  
+
+ul .fa-home {   /*From style,body,background.. is to make menu, home icon button*/
+    font-size: 30px;
+}
+
+
+/*.tooltip {           --> This is for the underline of menu icon
+    position: rrelative;
+    display: iinline-block;
+    border-bottom: 1px dottedd blackk;
+}*/
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 240px;
+    background-color: rgb(236, 210, 210);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 20;
+    /*position: absolute;*/
+    z-index: 1;
+    top: -5px;
+    left: 110%;
+}
+  
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 500%;
+    right: 150%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent rgb(236, 210, 210) transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+body div label .search {
+    float : right ;
+}
+
+footer p {
+    color: rgb(230, 23, 137);
+}
+
+div {
+    padding: 20px;
+}
+
+header div label input button {
+    float: right;
+}
+
+.btn {
+    color: rgb(230, 23, 137);
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#search {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+body>header>.tooltip>button.btn {
+    border: none;
+    background-color: transparent;
+}
+  
+  
+  
